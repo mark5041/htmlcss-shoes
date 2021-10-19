@@ -7,7 +7,6 @@
 html {
     font-size: 100%;
     scroll-behavior: smooth;
-    animation-duration: 10s;
 }
 
 .absolute {
@@ -40,6 +39,11 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.image {
+    height: auto;
+    width: 100%;
 }
 
 .text {
