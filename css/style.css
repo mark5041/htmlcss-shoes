@@ -6,6 +6,8 @@
 
 html {
     font-size: 100%;
+    scroll-behavior: smooth;
+    animation-duration: 10s;
 }
 
 .absolute {
@@ -18,5 +20,63 @@ html {
 
 .row {
     height: 100vh;
+    position: relative;
+}
+
+.row:first-child {
     background-color: red;
+}
+
+.row:first-child + .row{
+    background-color: green;
+}
+
+.row:last-child {
+    background-color: yellow;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    text-align: center;
+    font-size: 3em;
+    color: green;
+}
+
+.row:first-child .box .text, .row:first-child + .row .box .text{
+    color: yellow;
+}
+
+
+.nav {
+    position: fixed;
+    top: 5vh;
+    right: 5vh;
+    z-index: 100;
+}
+
+.nav li {
+    display: inline-block;
+    list-style-type: none;
+    border-radius: 100px;
+    margin-left: 4vh;
+}
+
+li a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+}
+
+ul li:hover {
+    box-shadow: 0px 6px 10px;
 }
