@@ -60,7 +60,7 @@ html {
 .nav {
     position: fixed;
     top: 5vh;
-    right: 5vh;
+    right: 5vw;
     z-index: 100;
 }
 
@@ -68,7 +68,7 @@ html {
     display: inline-block;
     list-style-type: none;
     border-radius: 100px;
-    margin-left: 4vh;
+    margin-left: 4vw;
 }
 
 li a {
